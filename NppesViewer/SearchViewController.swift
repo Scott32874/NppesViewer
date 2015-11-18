@@ -18,7 +18,7 @@ class SearchViewController: UIViewController {
         service.getNppesProviderByState("KY") {
             (let providers) in
             for provider in providers! {
-                var t = provider.id
+               // var t = provider.id
             }
         }
     }

@@ -18,6 +18,8 @@
 		5C75B0851BF8F12D008D20D3 /* BasicOrginization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75B0841BF8F12D008D20D3 /* BasicOrginization.swift */; };
 		5C75B0871BF91A75008D20D3 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75B0861BF91A75008D20D3 /* NetworkOperation.swift */; };
 		5C75B08B1BF926AE008D20D3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75B08A1BF926AE008D20D3 /* SearchViewController.swift */; };
+		5C75B08F1BFBF23B008D20D3 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75B08D1BFBF23B008D20D3 /* ResultsTableViewController.swift */; };
+		5C75B0921BFC09A2008D20D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C75B0911BFC09A2008D20D3 /* MapKit.framework */; };
 		5CE5D26D1BF8DA3900C2C2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5D26C1BF8DA3900C2C2B6 /* AppDelegate.swift */; };
 		5CE5D2761BF8DA3900C2C2B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE5D2741BF8DA3900C2C2B6 /* Main.storyboard */; };
 		5CE5D2781BF8DA3900C2C2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE5D2771BF8DA3900C2C2B6 /* Assets.xcassets */; };
@@ -56,6 +58,8 @@
 		5C75B0841BF8F12D008D20D3 /* BasicOrginization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicOrginization.swift; sourceTree = "<group>"; };
 		5C75B0861BF91A75008D20D3 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		5C75B08A1BF926AE008D20D3 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5C75B08D1BFBF23B008D20D3 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		5C75B0911BFC09A2008D20D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5CE5D2691BF8DA3800C2C2B6 /* NppesViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NppesViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE5D26C1BF8DA3900C2C2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CE5D2751BF8DA3900C2C2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C75B0921BFC09A2008D20D3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +117,18 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		5C75B08C1BFBF1E7008D20D3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C75B08D1BFBF23B008D20D3 /* ResultsTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		5CE5D2601BF8DA3800C2C2B6 = {
 			isa = PBXGroup;
 			children = (
+				5C75B0911BFC09A2008D20D3 /* MapKit.framework */,
 				5CE5D26B1BF8DA3800C2C2B6 /* NppesViewer */,
 				5CE5D2841BF8DA3900C2C2B6 /* NppesViewerTests */,
 				5CE5D28F1BF8DA3900C2C2B6 /* NppesViewerUITests */,
@@ -135,6 +149,7 @@
 		5CE5D26B1BF8DA3800C2C2B6 /* NppesViewer */ = {
 			isa = PBXGroup;
 			children = (
+				5C75B08C1BFBF1E7008D20D3 /* ViewControllers */,
 				5C75B0731BF8E1C6008D20D3 /* Models */,
 				5CE5D29E1BF8DC4900C2C2B6 /* NppesProviderService.swift */,
 				5C75B0861BF91A75008D20D3 /* NetworkOperation.swift */,
@@ -228,6 +243,9 @@
 		5CE5D2611BF8DA3800C2C2B6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Scott Adams";
 				TargetAttributes = {
@@ -304,6 +322,7 @@
 				5C75B0851BF8F12D008D20D3 /* BasicOrginization.swift in Sources */,
 				5C75B0791BF8E550008D20D3 /* Identifier.swift in Sources */,
 				5C75B0831BF8F037008D20D3 /* BasicIndividual.swift in Sources */,
+				5C75B08F1BFBF23B008D20D3 /* ResultsTableViewController.swift in Sources */,
 				5C75B08B1BF926AE008D20D3 /* SearchViewController.swift in Sources */,
 				5CE5D29F1BF8DC4900C2C2B6 /* NppesProviderService.swift in Sources */,
 				5C75B0771BF8E289008D20D3 /* CurrentWeather.swift in Sources */,
