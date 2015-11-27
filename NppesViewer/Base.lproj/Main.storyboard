@@ -8,23 +8,53 @@
         <scene sceneID="b8f-42-QGY">
             <objects>
                 <tableViewController id="9Lx-hY-brV" customClass="ResultsTableViewController" customModule="NppesViewer" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="n4Q-0R-gMB">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" id="n4Q-0R-gMB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="providerCell" id="JhU-Nc-eI3">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="providerCell" rowHeight="56" id="JhU-Nc-eI3" customClass="NpiViewCell" customModule="NppesViewer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="56"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JhU-Nc-eI3" id="PPr-xI-rhq">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="55.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dr. Perumal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcV-ia-O1K">
+                                            <rect key="frame" x="55" y="13" width="254" height="10"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="8"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doctor.png" translatesAutoresizingMaskIntoConstraints="NO" id="5i0-Qm-HPJ">
+                                            <rect key="frame" x="13" y="8" width="34" height="35"/>
+                                            <animations/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NPI:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uh-BX-5ad">
+                                            <rect key="frame" x="55" y="25" width="12" height="8"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="6"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3452345234523452" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOB-DN-CIP">
+                                            <rect key="frame" x="68" y="25" width="54" height="8"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="6"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <segue destination="XAu-xh-s03" kind="show" id="Ilf-cZ-X7W"/>
+                                    <outlet property="nameLabel" destination="JcV-ia-O1K" id="Oyb-Ca-38K"/>
+                                    <outlet property="npiLabel" destination="cOB-DN-CIP" id="ri7-qc-axz"/>
+                                    <outlet property="npiTypeImage" destination="5i0-Qm-HPJ" id="EXt-4n-hKa"/>
+                                    <segue destination="XAu-xh-s03" kind="show" identifier="LoadDetails" id="Ilf-cZ-X7W"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -38,12 +68,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oq5-1T-7yT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="568" y="-342"/>
+            <point key="canvasLocation" x="1624" y="-234"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="CJh-Zx-mEH">
             <objects>
-                <viewController id="XAu-xh-s03" sceneMemberID="viewController">
+                <viewController id="XAu-xh-s03" customClass="DetailViewController" customModule="NppesViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kV3-Kz-Qzz"/>
                         <viewControllerLayoutGuide type="bottom" id="YLx-Bc-qji"/>
@@ -51,15 +81,55 @@
                     <view key="view" contentMode="scaleToFill" id="Set-bW-Y7b">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doctor.png" translatesAutoresizingMaskIntoConstraints="NO" id="86K-nR-s6d">
+                                <rect key="frame" x="20" y="82" width="46" height="46"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXD-6E-gNE">
+                                <rect key="frame" x="20" y="149" width="346" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3452345234523452" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrW-b3-6Gr">
+                                <rect key="frame" x="74" y="107" width="346" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dr. Perumal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJC-Vs-IQ8">
+                                <rect key="frame" x="74" y="82" width="346" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="525 W Broadway Louisville, KY 40202" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HKR-za-Pgx">
+                                <rect key="frame" x="20" y="178" width="206" height="81"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="providerLocation" destination="HKR-za-Pgx" id="Cxw-pl-95H"/>
+                        <outlet property="providerNPINumber" destination="VrW-b3-6Gr" id="3CL-y5-h3p"/>
+                        <outlet property="providerName" destination="RJC-Vs-IQ8" id="7ID-Be-ger"/>
+                        <outlet property="providerTypeImage" destination="86K-nR-s6d" id="Vsy-ie-tK2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41G-ia-mNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1313" y="269"/>
+            <point key="canvasLocation" x="1624" y="881"/>
         </scene>
-        <!--Item-->
+        <!--Filter-->
         <scene sceneID="1XR-dk-9IM">
             <objects>
                 <viewController id="HS9-Lg-fVG" sceneMemberID="viewController">
@@ -73,17 +143,17 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="rvA-8e-Eho"/>
+                    <tabBarItem key="tabBarItem" title="Filter" image="funnel.png" id="rvA-8e-Eho"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86w-4H-q7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-997" y="587"/>
+            <point key="canvasLocation" x="-989" y="907"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="FvM-Yg-GEC">
             <objects>
                 <navigationController id="OC0-MT-2lZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Z5w-eX-PHy"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="earth-usa.png" id="Z5w-eX-PHy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fie-01-n48">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -95,7 +165,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zgt-hT-pmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-308" y="565"/>
+            <point key="canvasLocation" x="-256" y="897"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Vaq-XN-8nd">
@@ -124,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t2U-lR-Q4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="491" y="580"/>
+            <point key="canvasLocation" x="651" y="881"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pab-LS-Zgs">
@@ -144,13 +214,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7La-v5-4vR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-967" y="-258"/>
+            <point key="canvasLocation" x="-995" y="-234"/>
         </scene>
-        <!--Item-->
+        <!--Results-->
         <scene sceneID="vvr-Qk-eQe">
             <objects>
                 <navigationController id="e3R-tl-v80" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5WH-BI-sSC"/>
+                    <tabBarItem key="tabBarItem" title="Results" image="long-list-mini.png" id="5WH-BI-sSC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vl9-p1-ztW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -162,10 +232,16 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yK2-WT-K6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-244" y="-316"/>
+            <point key="canvasLocation" x="216" y="-234"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="doctor.png" width="30" height="30"/>
+        <image name="earth-usa.png" width="30" height="30"/>
+        <image name="funnel.png" width="30" height="30"/>
+        <image name="long-list-mini.png" width="20" height="20"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hLM-Ux-Duk"/>
+        <segue reference="Ilf-cZ-X7W"/>
     </inferredMetricsTieBreakers>
 </document>

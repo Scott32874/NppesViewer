@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C3BE0151C077949009501B9 /* earth-usa.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE0121C077949009501B9 /* earth-usa.png */; };
+		5C3BE0161C077949009501B9 /* earth-usa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE0131C077949009501B9 /* earth-usa@2x.png */; };
+		5C3BE0171C077949009501B9 /* earth-usa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE0141C077949009501B9 /* earth-usa@3x.png */; };
+		5C3BE01B1C077B65009501B9 /* long-list-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE0181C077B65009501B9 /* long-list-mini.png */; };
+		5C3BE01C1C077B65009501B9 /* long-list-mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE0191C077B65009501B9 /* long-list-mini@2x.png */; };
+		5C3BE01D1C077B65009501B9 /* long-list-mini@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE01A1C077B65009501B9 /* long-list-mini@3x.png */; };
+		5C3BE0211C0794D2009501B9 /* funnel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE01E1C0794D2009501B9 /* funnel.png */; };
+		5C3BE0221C0794D2009501B9 /* funnel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE01F1C0794D2009501B9 /* funnel@2x.png */; };
+		5C3BE0231C0794D2009501B9 /* funnel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE0201C0794D2009501B9 /* funnel@3x.png */; };
+		5C3BE0271C07959D009501B9 /* hospital.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE0241C07959D009501B9 /* hospital.png */; };
+		5C3BE0281C07959D009501B9 /* hospital@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE0251C07959D009501B9 /* hospital@2x.png */; };
+		5C3BE0291C07959D009501B9 /* hospital@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3BE0261C07959D009501B9 /* hospital@3x.png */; };
+		5C3BE02B1C088C9E009501B9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3BE02A1C088C9E009501B9 /* DetailViewController.swift */; };
 		5C75B0751BF8E1F5008D20D3 /* NppesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75B0741BF8E1F5008D20D3 /* NppesProvider.swift */; };
 		5C75B0771BF8E289008D20D3 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75B0761BF8E289008D20D3 /* CurrentWeather.swift */; };
 		5C75B0791BF8E550008D20D3 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75B0781BF8E550008D20D3 /* Identifier.swift */; };
@@ -20,6 +33,11 @@
 		5C75B08B1BF926AE008D20D3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75B08A1BF926AE008D20D3 /* SearchViewController.swift */; };
 		5C75B08F1BFBF23B008D20D3 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75B08D1BFBF23B008D20D3 /* ResultsTableViewController.swift */; };
 		5C75B0921BFC09A2008D20D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C75B0911BFC09A2008D20D3 /* MapKit.framework */; };
+		5C819AC41C068294000D859D /* NpiViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C819AC31C068294000D859D /* NpiViewCell.swift */; };
+		5C819AC81C07753F000D859D /* doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C819AC51C07753F000D859D /* doctor.png */; };
+		5C819AC91C07753F000D859D /* doctor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C819AC61C07753F000D859D /* doctor@2x.png */; };
+		5C819ACA1C07753F000D859D /* doctor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C819AC71C07753F000D859D /* doctor@3x.png */; };
+		5C819ACD1C077670000D859D /* doctor.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5C819ACC1C077670000D859D /* doctor.svg */; };
 		5CE5D26D1BF8DA3900C2C2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE5D26C1BF8DA3900C2C2B6 /* AppDelegate.swift */; };
 		5CE5D2761BF8DA3900C2C2B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE5D2741BF8DA3900C2C2B6 /* Main.storyboard */; };
 		5CE5D2781BF8DA3900C2C2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE5D2771BF8DA3900C2C2B6 /* Assets.xcassets */; };
@@ -47,6 +65,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C3BE0121C077949009501B9 /* earth-usa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "earth-usa.png"; sourceTree = "<group>"; };
+		5C3BE0131C077949009501B9 /* earth-usa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "earth-usa@2x.png"; sourceTree = "<group>"; };
+		5C3BE0141C077949009501B9 /* earth-usa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "earth-usa@3x.png"; sourceTree = "<group>"; };
+		5C3BE0181C077B65009501B9 /* long-list-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "long-list-mini.png"; sourceTree = "<group>"; };
+		5C3BE0191C077B65009501B9 /* long-list-mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "long-list-mini@2x.png"; sourceTree = "<group>"; };
+		5C3BE01A1C077B65009501B9 /* long-list-mini@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "long-list-mini@3x.png"; sourceTree = "<group>"; };
+		5C3BE01E1C0794D2009501B9 /* funnel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel.png; sourceTree = "<group>"; };
+		5C3BE01F1C0794D2009501B9 /* funnel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel@2x.png"; sourceTree = "<group>"; };
+		5C3BE0201C0794D2009501B9 /* funnel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel@3x.png"; sourceTree = "<group>"; };
+		5C3BE0241C07959D009501B9 /* hospital.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hospital.png; sourceTree = "<group>"; };
+		5C3BE0251C07959D009501B9 /* hospital@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hospital@2x.png"; sourceTree = "<group>"; };
+		5C3BE0261C07959D009501B9 /* hospital@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hospital@3x.png"; sourceTree = "<group>"; };
+		5C3BE02A1C088C9E009501B9 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5C75B0741BF8E1F5008D20D3 /* NppesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NppesProvider.swift; sourceTree = "<group>"; };
 		5C75B0761BF8E289008D20D3 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		5C75B0781BF8E550008D20D3 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
@@ -60,6 +91,11 @@
 		5C75B08A1BF926AE008D20D3 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		5C75B08D1BFBF23B008D20D3 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 		5C75B0911BFC09A2008D20D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5C819AC31C068294000D859D /* NpiViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NpiViewCell.swift; sourceTree = "<group>"; };
+		5C819AC51C07753F000D859D /* doctor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctor.png; sourceTree = "<group>"; };
+		5C819AC61C07753F000D859D /* doctor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doctor@2x.png"; sourceTree = "<group>"; };
+		5C819AC71C07753F000D859D /* doctor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doctor@3x.png"; sourceTree = "<group>"; };
+		5C819ACC1C077670000D859D /* doctor.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = doctor.svg; sourceTree = "<group>"; };
 		5CE5D2691BF8DA3800C2C2B6 /* NppesViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NppesViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE5D26C1BF8DA3900C2C2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CE5D2751BF8DA3900C2C2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,8 +157,33 @@
 			isa = PBXGroup;
 			children = (
 				5C75B08D1BFBF23B008D20D3 /* ResultsTableViewController.swift */,
+				5C819AC31C068294000D859D /* NpiViewCell.swift */,
+				5C3BE02A1C088C9E009501B9 /* DetailViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5C819ACB1C077556000D859D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5C3BE0181C077B65009501B9 /* long-list-mini.png */,
+				5C3BE0191C077B65009501B9 /* long-list-mini@2x.png */,
+				5C3BE01A1C077B65009501B9 /* long-list-mini@3x.png */,
+				5C3BE0121C077949009501B9 /* earth-usa.png */,
+				5C3BE0131C077949009501B9 /* earth-usa@2x.png */,
+				5C3BE0141C077949009501B9 /* earth-usa@3x.png */,
+				5C819ACC1C077670000D859D /* doctor.svg */,
+				5C819AC51C07753F000D859D /* doctor.png */,
+				5C819AC61C07753F000D859D /* doctor@2x.png */,
+				5C819AC71C07753F000D859D /* doctor@3x.png */,
+				5C3BE01E1C0794D2009501B9 /* funnel.png */,
+				5C3BE01F1C0794D2009501B9 /* funnel@2x.png */,
+				5C3BE0201C0794D2009501B9 /* funnel@3x.png */,
+				5C3BE0241C07959D009501B9 /* hospital.png */,
+				5C3BE0251C07959D009501B9 /* hospital@2x.png */,
+				5C3BE0261C07959D009501B9 /* hospital@3x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		5CE5D2601BF8DA3800C2C2B6 = {
@@ -149,6 +210,7 @@
 		5CE5D26B1BF8DA3800C2C2B6 /* NppesViewer */ = {
 			isa = PBXGroup;
 			children = (
+				5C819ACB1C077556000D859D /* Images */,
 				5C75B08C1BFBF1E7008D20D3 /* ViewControllers */,
 				5C75B0731BF8E1C6008D20D3 /* Models */,
 				5CE5D29E1BF8DC4900C2C2B6 /* NppesProviderService.swift */,
@@ -287,8 +349,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3BE0161C077949009501B9 /* earth-usa@2x.png in Resources */,
+				5C3BE01C1C077B65009501B9 /* long-list-mini@2x.png in Resources */,
+				5C3BE01B1C077B65009501B9 /* long-list-mini.png in Resources */,
+				5C3BE0231C0794D2009501B9 /* funnel@3x.png in Resources */,
+				5C3BE01D1C077B65009501B9 /* long-list-mini@3x.png in Resources */,
+				5C819AC81C07753F000D859D /* doctor.png in Resources */,
 				5CE5D27B1BF8DA3900C2C2B6 /* LaunchScreen.storyboard in Resources */,
+				5C3BE0271C07959D009501B9 /* hospital.png in Resources */,
+				5C3BE0151C077949009501B9 /* earth-usa.png in Resources */,
+				5C819ACA1C07753F000D859D /* doctor@3x.png in Resources */,
+				5C3BE0221C0794D2009501B9 /* funnel@2x.png in Resources */,
+				5C819AC91C07753F000D859D /* doctor@2x.png in Resources */,
+				5C3BE0281C07959D009501B9 /* hospital@2x.png in Resources */,
+				5C3BE0171C077949009501B9 /* earth-usa@3x.png in Resources */,
 				5CE5D2781BF8DA3900C2C2B6 /* Assets.xcassets in Resources */,
+				5C3BE0211C0794D2009501B9 /* funnel.png in Resources */,
+				5C3BE0291C07959D009501B9 /* hospital@3x.png in Resources */,
+				5C819ACD1C077670000D859D /* doctor.svg in Resources */,
 				5CE5D2761BF8DA3900C2C2B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +399,9 @@
 				5C75B0871BF91A75008D20D3 /* NetworkOperation.swift in Sources */,
 				5C75B0851BF8F12D008D20D3 /* BasicOrginization.swift in Sources */,
 				5C75B0791BF8E550008D20D3 /* Identifier.swift in Sources */,
+				5C3BE02B1C088C9E009501B9 /* DetailViewController.swift in Sources */,
 				5C75B0831BF8F037008D20D3 /* BasicIndividual.swift in Sources */,
+				5C819AC41C068294000D859D /* NpiViewCell.swift in Sources */,
 				5C75B08F1BFBF23B008D20D3 /* ResultsTableViewController.swift in Sources */,
 				5C75B08B1BF926AE008D20D3 /* SearchViewController.swift in Sources */,
 				5CE5D29F1BF8DC4900C2C2B6 /* NppesProviderService.swift in Sources */,
